@@ -1,0 +1,77 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url('./bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    /* font-size: 25px; */
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+.hide {
+    display: none !important;
+}
+
+section.one .head {
+    height: 120px;
+}
+
+section.one .body {
+    height: 120px;
+    padding: 7px 0;
+    text-align: center;
+}
+
+/* Define the animation */
+@keyframes scaling {
+    0% {
+      transform: scale(0);
+      /* width: 10%;  */
+    }
+    50% {
+      transform: scale(2);
+      /* width: 100%; */
+    }
+    100% {
+      transform: scale(1); 
+      /* width: 90%; */
+    }
+}
+
+/* Apply the animation to an HTML element */
+.two img {
+    animation: scaling 5s ease-in-out 1;
+    box-sizing: border-box;
+  }
